@@ -1,0 +1,238 @@
+/* ---------------- Container ---------------- */
+.upload-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background: #f4f7fc;
+}
+
+/* ---------------- Dropzone ---------------- */
+.upload-dropzone {
+  background: #f8f9fc;
+  border: 2px dashed #a7b0c0;
+  padding: 50px;
+  margin-top: 20px;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #555;
+  font-size: 18px;
+}
+
+.upload-dropzone:hover {
+  background: #eef1f7;
+  border-color: #4c6ef5;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* ---------------- Button Row ---------------- */
+.button-row {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.button-row button {
+  padding: 12px 25px;
+  border: none;
+  background: #4c6ef5;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.button-row button:hover {
+  background: #3b5bdb;
+  transform: translateY(-2px);
+}
+
+.cancel-btn {
+  background: #e03131 !important;
+}
+
+.cancel-btn:hover {
+  background: #c92a2a !important;
+}
+
+/* ---------------- Error Messages ---------------- */
+.error-message {
+  color: #dc3545;
+  margin-top: 15px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* ---------------- Preview Grid ---------------- */
+.preview-grid {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 20px;
+}
+
+/* Valid Image Cards */
+.preview-card {
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+  padding: 10px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.preview-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+  border: 2px solid #4c6ef5;
+}
+
+/* Glow effect for valid card */
+.preview-card:hover img {
+  box-shadow: 0 0 15px #4c6ef5;
+  transition: box-shadow 0.3s ease;
+}
+
+.preview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.filename {
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  color: #444;
+  width: 120px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.remove-btn {
+  border: none;
+  background: #ff4d4d;
+  color: white;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 22px;
+  transition: all 0.2s ease;
+}
+
+.remove-btn:hover {
+  background: #e03131;
+}
+
+.preview-img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+/* ---------------- Rejected Files ---------------- */
+.rejected-files {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rejected-card {
+  background: #ffe6e6;
+  color: #dc3545;
+  border: 1px solid #dc3545;
+  padding: 10px;
+  border-radius: 12px;
+  font-size: 14px;
+  text-align: left;
+  animation: shake 0.5s ease;
+}
+
+/* ---------------- Results Grid ---------------- */
+.results-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  gap: 25px;
+}
+
+.result-card {
+  background: white;
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.result-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.result-images {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.result-img-box {
+  width: 50%;
+  text-align: center;
+}
+
+.result-img-box img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 5px;
+  transition: all 0.3s ease;
+}
+
+.result-info {
+  margin-top: 15px;
+  border-left: 5px solid;
+  padding-left: 12px;
+  text-align: left;
+}
+
+.prediction-badge {
+  padding: 6px 12px;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  font-size: 14px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/* ---------------- Animations ---------------- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Shake animation for rejected files */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-5px); }
+  40% { transform: translateX(5px); }
+  60% { transform: translateX(-5px); }
+  80% { transform: translateX(5px); }
+  100% { transform: translateX(0); }
+}
+

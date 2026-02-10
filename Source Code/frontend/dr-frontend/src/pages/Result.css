@@ -1,0 +1,97 @@
+
+
+.result-container {
+  max-width: 1000px;
+  margin: 10px auto;
+  padding: 0;
+  padding-top: 50px;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.result-container h2 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.result-container input[type="text"] {
+  padding: 10px;
+  width: 250px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.result-container input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.result-container button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.result-container button:hover {
+  opacity: 0.9;
+}
+
+.result-container button.clear-btn {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.result-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.result-container table th,
+.result-container table td {
+  padding: 12px 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.result-container table thead {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.result-container table tbody tr:nth-child(even) {
+  background-color: #f1f1f1;
+}
+
+.result-container table tbody tr:hover {
+  background-color: #e7f3ff;
+}
+
+.result-container table td button {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.result-container table td button:hover {
+  background-color: #a71d2a;
+}
+
+.result-container p {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 20px;
+}

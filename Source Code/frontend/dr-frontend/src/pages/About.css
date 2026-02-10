@@ -1,0 +1,171 @@
+/* Global Page Styles - Light Theme */
+.about-container {
+  background: linear-gradient(135deg, #e6f7ff, #ffffff);
+  color: #003a5d;
+  padding: 40px 7%;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.header h1 {
+  font-size: 42px;
+  font-weight: 700;
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.header p {
+  font-size: 18px;
+  opacity: 0.85;
+  color: #004a77;
+}
+
+/* Section Titles */
+.section h2 {
+  font-size: 30px;
+  color: #005c99;
+  margin-bottom: 20px;
+}
+
+/* Section Styling */
+.section {
+  margin-top: 60px;
+  text-align: center;
+  color: #003a5d;
+}
+
+/* Lists */
+.section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section ul li {
+  font-size: 18px;
+  padding: 8px 0;
+  opacity: 0.95;
+}
+
+/* Button Link */
+.btn-link {
+  display: inline-block;
+  padding: 10px 22px;
+  background: #009dff;
+  color: white;
+  font-size: 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-link:hover {
+  background: #00b7ff;
+  box-shadow: 0 0 12px #00bfff;
+}
+
+/* XAI Cards - White Glass effect */
+.xai-visual {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.xai-card {
+  width: 280px;
+  padding: 22px;
+  color: #003a5d;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 18px;
+  border: 1px solid #cbe7ff;
+  backdrop-filter: blur(5px);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.xai-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 18px rgba(0, 157, 255, 0.4);
+}
+
+/* Charts */
+.chart-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.chart-card {
+  background: white;
+  padding: 20px;
+  border-radius: 18px;
+  width: 360px;
+  border: 1px solid #d6eaff;
+  transition: 0.3s;
+}
+
+.chart-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 150, 255, 0.25);
+}
+
+/* Team Section */
+.team-grid {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.team-card {
+  width: 230px;
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 18px;
+  text-align: center;
+  border: 1px solid #bbdeff;
+  transition: 0.35s;
+}
+
+.team-card span {
+  font-size: 15px;
+  color: #005d8f;
+  opacity: 0.8;
+}
+
+.team-card:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 18px rgba(0, 155, 255, 0.35);
+}
+
+/* College text */
+.college {
+  color: #005d8f;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 25px;
+  margin-top: 50px;
+  background: #e1f4ff;
+  border-radius: 12px;
+  font-size: 15px;
+  color: #003a5d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header h1 { font-size: 32px; }
+  .section h2 { font-size: 26px; }
+  .chart-card { width: 100%; }
+}
