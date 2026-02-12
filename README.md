@@ -1,5 +1,5 @@
 
-# Team Number – Project Title
+# BG8 – Feature-Optimized Ensemble Model For Diabetic Retinopathy Detection (CNN + APSO)
 
 ## Team Info
 - 22471A05D0 — **Shaik Meera Jasmine** ( https://www.linkedin.com/in/meera-jasmine-shaik-8734a9277/ )
